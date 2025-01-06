@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Growtopia Private Server</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #2a5298, #1e3c72);
+            color: white;
+            text-align: center;
+        }
+        header {
+            background-color: #1b2a41;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav button {
+            background-color: #00bfff;
+            color: white;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        nav button:hover {
+            background-color: #007acc;
+        }
+        section {
+            display: none;
+            padding: 50px 20px;
+        }
+        section.active {
+            display: block;
+        }
+        .hero {
+            background: url('https://example.com/your-image.jpg') no-repeat center center/cover;
+            padding: 100px 20px;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .feature {
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: #1b2a41;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #121a2c;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Growtopia Private Server</h1>
+    <nav>
+        <button onclick="showSection('about')">About</button>
+        <button onclick="showSection('features')">Features</button>
+        <button onclick="showSection('download')">Download</button>
+        <button onclick="showSection('contact')">Contact</button>
+    </nav>
+</header>
+
+<section id="about" class="active">
+    <h2>About Us</h2>
+    <p>Welcome to our Growtopia Private Server! Experience the ultimate gameplay with custom features, no lag, and an amazing community.</p>
+</section>
+
+<section id="features">
+    <h2>Features</h2>
+    <div class="feature">
+        <h3>Exclusive Items</h3>
+        <p>Get access to custom items and blocks that make your experience unique.</p>
+    </div>
+    <div class="feature">
+        <h3>Optimized Performance</h3>
+        <p>Enjoy lag-free gameplay with our powerful servers.</p>
+    </div>
+    <div class="feature">
+        <h3>Community Events</h3>
+        <p>Join regular events, giveaways, and more with a friendly community.</p>
+    </div>
+</section>
+
+<section id="download">
+    <h2>Download</h2>
+    <p>Download our custom Growtopia client to join the fun.</p>
+    <a href="#" style="text-decoration: none;">
+        <div style="background: #00bfff; color: white; padding: 10px 20px; border-radius: 5px; display: inline-block; font-weight: bold;">Download Now</div>
+    </a>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions? Contact us through:</p>
+    <p>Email: </p>
+    <p>Discord: <a href="#" style="color: #00bfff; text-decoration: none;">Join Our Server</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 GTAL. All Rights Reserved.</p>
+</footer>
+
+<script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            section.classList.remove('active');
+        });
+        document.getElementById(sectionId).classList.add('active');
+    }
+</script>
+
+</body>
+</html>
